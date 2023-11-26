@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonard's Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .menu-toggle {
+            display: none; 
+            cursor: pointer;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between; /* Spread the navigation links */
+            align-items: center;
+        }
+
+        .nav-links li {
+            margin-right: -5%;
+            padding: 1px;
+        }
+
+
+        @media only screen and (max-width: 720px) {
+            .menu-toggle {
+                display:block; 
+                margin-left: 0px;
+                margin-right: 2px;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction:row; /* Change to column for vertical alignment */
+                position: absolute;
+                top: 80px; /* Adjust as needed */
+                left: 2px;
+                width: 100%;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                justify-items: left;
+            }
+
+            .nav-links.show {
+                display: flex; 
+                justify-content: center;
+                margin-left: 0px;
+                margin-right: 2px;
+                justify-items: left;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="imgs/Image001.jpg.png" alt="Your Logo" width="100" height="50">
+    </div>
+    <h1>Leonard's Porfolio Website</h1>
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="passion.html">Passion</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div style="font-size: 16px;" class="caption">
+        <h2>Welcome to my digital space! I'm Leonard, Explore my portfolio, and let's embark on a journey of innovation together.</h2>
+   </div>
+<div class="slideshow-container">
+    <div class="mySlides">
+        <img src="imgs/image.jpg" alt="Image 1">
+    </div>
+
+    <div class="mySlides">
+        <img src="imgs/Image1700738210569.png" alt="Image 2">
+    </div>
+    <div class="mySlides">
+        <img src="imgs/Image1700555954892.png" alt="Image 3">
+    </div>
+</div>
+<footer style="margin-top: 670px;" class="footer">
+    <div class="contact-icons">
+        <a href="https://twitter.com/yourtwitterhandle" target="_blank">
+            <img src="imgs/download.png" alt="whatsapp" width="30"><b>
+        </a>
+        <a style="margin-left: 10px;" href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fimages.app.goo.gl%252FL7kWngGRUA2QMXZ97&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_GB" target="_blank">
+            <img src="imgs/350974_facebook_logo_icon.png" alt="facebook" width="30">
+        </a> 
+    </div>
+    <div class="copyright">
+        <p>&copy; 2023 Leonard. All Rights Reserved.</p><b>
+            <p>Contact:@PlimoLeonard</p>
+    </div>
+</footer>
+<script src="script.js"></script>    
+</script>>
+</script>
+</body>
+</html>
