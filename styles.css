@@ -112,6 +112,7 @@ section {
     max-width: 300px;
     max-height: 200px; 
     border-radius: 50%;
+    justify-item:center;
 } 
 section{
     margin-top: 90px;
